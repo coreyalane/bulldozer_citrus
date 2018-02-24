@@ -1,0 +1,91 @@
+{
+  "contract_name": "MessageBoard",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "new_message",
+          "type": "bytes32"
+        }
+      ],
+      "name": "updateMessage",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getMessage",
+      "outputs": [
+        {
+          "name": "output",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_new_message",
+          "type": "bytes32"
+        }
+      ],
+      "name": "MessageUpdated",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b7f48656c6c6f2045746865722e00000000000000000000000000000000000000006000555b5b60bf806100416000396000f300606060405263ffffffff60e060020a600035041663a9a1523f8114602a578063ce6d41de14603c575bfe5b3415603157fe5b603a600435605b565b005b3415604357fe5b6049608c565b60408051918252519081900360200190f35b600081815560405182917fde3dc3335dea4d1a1060ef6cefcfcc109eb0a1e78ce151818d3f17a01e1f8a0591a25b50565b6000545b905600a165627a7a7230582021b05adca2bcccf84c22b12d8a2f7a996dbaeccae25be036f7b8876b0790aa060029",
+  "networks": {
+    "5777": {
+      "events": {
+        "0xde3dc3335dea4d1a1060ef6cefcfcc109eb0a1e78ce151818d3f17a01e1f8a05": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_new_message",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MessageUpdated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x8f0483125fcb9aaaefa9209d8e9d7b9c8b9fb90f",
+      "updated_at": 1515392977890
+    },
+    "1515386061471": {
+      "events": {
+        "0xde3dc3335dea4d1a1060ef6cefcfcc109eb0a1e78ce151818d3f17a01e1f8a05": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_new_message",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MessageUpdated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x26fc362b66314952ca19165ba0f80c1e5b6df114",
+      "updated_at": 1515389082811
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1515392977890
+}
