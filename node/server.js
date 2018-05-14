@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
     Web3        = require('web3'),
     contract    = require("truffle-contract"),
     path        = require('path'),
-    MessageBoard = require(path.join(__dirname, '../helloether/build/contracts/MessageBoard.json'));
+    MessageBoard = require(path.join(__dirname, '../ether/build/contracts/MessageBoard.json'));
 
 // Setup MongoDB
 var mongoDB = 'mongodb://35.192.100.161:27017/show';
@@ -34,6 +34,9 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
+
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 });
